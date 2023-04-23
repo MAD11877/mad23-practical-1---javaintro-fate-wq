@@ -26,7 +26,7 @@ public class Question5
      * Hint: Use a loop to get input. Use another 2 loops to find the mode
      */
      
-    Scanner in = new Scanner(System.in);
+    Scanner scanner = new Scanner(System.in);
     // Prompt the user for the number of integers
         int n = scanner.nextInt();
 
