@@ -17,10 +17,10 @@ public class Question4
      * Hint: 2 loops are required. System.out.print(...) to print on single line.
      */
      
-    Scanner in = new Scanner(System.in);
-        int base = in.nextInt();
+    Scanner input = new Scanner(System.in);
+        int base = input.nextInt();
         
-        for (int i = 1; i <= base; i++) {
+        for (int i = base; i >= 1; i--) {
             for (int j = 1; j <= i; j++) {
                 System.out.print("*");
             }
