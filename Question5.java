@@ -27,6 +27,38 @@ public class Question5
      */
      
     Scanner in = new Scanner(System.in);
+    // Prompt the user for the number of integers
+        int n = scanner.nextInt();
+
+        // Get the integers from the user
+        int[] integers = new int[n];
+        for (int i = 0; i < n; i++) 
+        {           
+            integers[i] = scanner.nextInt();
+        }
+
+        // Find the mode
+        int mode = 0;
+        int maxCount = 0;
+        for (int i = 0; i < n; i++) {
+            int count = 0;
+            for (int j = 0; j < n; j++) 
+            {
+                if (integers[j] == integers[i]) 
+                {
+                    count++;
+                }
+            }
+            //update maxCount if frequency is higher than previous
+            if (count > maxCount) 
+            {
+                maxCount = count;
+                mode = integers[i];
+            }
+        }
+
+        // Print the mode
+        System.out.println(mode);
     
   }
 }
